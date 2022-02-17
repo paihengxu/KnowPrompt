@@ -5,8 +5,8 @@ import torch
 import json
 
 
-model_name_or_path = "roberta-large"
-dataset_name = "retacred"
+model_name_or_path = "roberta-base"
+dataset_name = "semeval"
 
 
 

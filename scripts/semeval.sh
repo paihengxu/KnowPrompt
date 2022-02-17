@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=0 python main.py --max_epochs=10  --num_workers=8 \
-    --model_name_or_path roberta-large \
+    --model_name_or_path roberta-base \
     --accumulate_grad_batches 1 \
-    --batch_size 16 \
+    --batch_size 4 \
     --data_dir dataset/semeval \
     --check_val_every_n_epoch 1 \
     --data_class WIKI80 \
