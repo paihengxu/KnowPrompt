@@ -1,0 +1,3 @@
+0	Other	nothing	has	nothing	to	nothing
+0	Cause-Effect(e1,e2)	cause	cause	of	effect	effect
+2	Cause-Effect(e2,e1)	effect	effect	of	cause	cause

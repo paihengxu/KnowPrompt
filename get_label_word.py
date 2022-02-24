@@ -6,7 +6,7 @@ import json
 
 
 model_name_or_path = "roberta-base"
-dataset_name = "semeval"
+dataset_name = "semeval_causal"
 
 
 
@@ -35,5 +35,6 @@ with open(f"dataset/{dataset_name}/rel2id.json", "r") as file:
 
 t = split_label_words(tokenizer, label_list)
 
-with open(f"./dataset/{model_name_or_path}_{dataset_name}.pt", "wb") as file:
+fn = f"./dataset/{model_name_or_path}_{dataset_name}_causal.pt" if causal else f"./dataset/{model_name_or_path}_{dataset_name}.pt"
+with open(fn, "wb") as file:
     torch.save(t, file)
